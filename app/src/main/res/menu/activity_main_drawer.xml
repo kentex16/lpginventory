@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/baseline_calendar_today_24"
+            android:title="Calendar"
+            tools:layout="layout/activity_calendar"/>
+
+        <item
+            android:id="@+id/nav_storage"
+            android:icon="@drawable/baseline_storage_24"
+            android:title="Storage"
+            tools:layout="@layout/storage_activity"/>
+
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/baseline_chat_24"
+            android:title="Chat"
+            tools:layout="@layout/storage_activity"/>
+
+    </group>
+
+</menu>

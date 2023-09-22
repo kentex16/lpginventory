@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+    <Spinner
+        android:id="@+id/spinnerModeOfPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Mode of Payment" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+    <Spinner
+        android:id="@+id/spinnerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Item (Weight)" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+    <EditText
+        android:id="@+id/editTextPaidCredits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount" />
+
+    <CheckBox
+        android:id="@+id/checkBoxContainerReturned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Returned Cylinder?" />
+
+    <Button
+        android:id="@+id/buttonAddPersonDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

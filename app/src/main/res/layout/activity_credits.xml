@@ -1,0 +1,32 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: 0.00"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Updated Total Amount when Credits are Paid -->
+    <TextView
+        android:id="@+id/textViewUpdatedTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Updated Total: 0.00"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- ListView to Display Credit Persons -->
+    <ListView
+        android:id="@+id/listViewCreditPersons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

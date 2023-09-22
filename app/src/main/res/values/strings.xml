@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Novero LPG Inventory</string>
+    <string name="open"> Open Navigation Drawer</string>
+    <string name="close"> Close Navigation Drawer</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string-array name="mode_of_payment_array">
+        <item> MOP </item>
+        <item>Cash</item>
+        <item>Gcash</item>
+        <item>Credit</item>
+    </string-array>
+    <string-array name="item_array">
+        <item> Weight </item>
+        <item>2.7 kg</item>
+        <item>11 kg</item>
+        <item>22 kg</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,101 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lpginventory">
+
+    <!-- Permissions, application info, etc. -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/your_icon_name"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LPGINVENTORY"
+        tools:targetApi="31">
+
+
+
+
+<activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:exported="true"> <!-- Set exported to "true" or "false" based on your needs -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Set parent activity for each child activity -->
+        <activity
+            android:name=".AddActivity"
+            android:label="Add Sale"
+            android:parentActivityName=".MainActivity"> <!-- Set parent activity here -->
+        </activity>
+
+        <activity
+            android:name=".DailySalesActivity"
+            android:label="Daily Sale"
+            android:parentActivityName=".MainActivity"> <!-- Set parent activity here -->
+        </activity>
+
+        <activity
+            android:name=".CreditsActivity"
+            android:label="Credits"
+            android:parentActivityName=".DailySalesActivity"> <!-- Set parent activity here -->
+        </activity>
+
+        <activity
+            android:name=".DataDisplayActivity"
+            android:label="Update"
+            android:parentActivityName=".MainActivity"> <!-- Set parent activity here -->
+        </activity>
+
+        <activity
+            android:name=".UpdateActivity"
+            android:label="Update"
+            android:parentActivityName=".DataDisplayActivity"> <!-- Set parent activity here -->
+        </activity>
+
+        <activity
+            android:name=".DeleteActivity"
+            android:label="Delete"
+            android:parentActivityName=".MainActivity"> <!-- Set parent activity here -->
+        </activity>
+
+        <activity
+            android:name=".CylinderActivity"
+            android:label="Borrowed Cylinder"
+            android:parentActivityName=".MainActivity"> <!-- Set parent activity here -->
+        </activity>
+
+        <activity
+            android:name=".CalendarActivity"
+            android:label="Sales"
+            android:parentActivityName=".MainActivity"> <!-- Set parent activity here -->
+        </activity>
+
+        <receiver
+            android:name=".ResetReceiver"
+            android:enabled="true"
+            android:exported="false">
+        </receiver>
+
+        <activity
+            android:name=".StorageActivity"
+            android:label="Storage"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".ResetDetailsActivity"
+            android:label="Storage"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".ChatActivity"
+            android:label="ChatBox"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+
+    </application>
+</manifest>
